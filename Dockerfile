@@ -5,9 +5,10 @@ RUN apt-get update -qq
 RUN apt-get upgrade -y
 RUN apt-get install -y python-pip
 RUN pip install mkdocs
+RUN rm -f /usr/share/nginx/html/portal
 RUN mkdir -p /usr/share/nginx/html/portal
 ADD . /usr/share/nginx/html/portal/
 RUN cd /usr/share/nginx/html/portal/ && \
-  mkdocs build --no-cache=false
+  mkdocs build
 RUN rm -f /etc/nginx/conf.d/*
 ADD nginx/conf.d /etc/nginx/conf.d/
