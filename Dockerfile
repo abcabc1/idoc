@@ -8,6 +8,6 @@ RUN pip install mkdocs
 RUN mkdir -p /usr/share/nginx/html/portal
 ADD . /usr/share/nginx/html/portal/
 RUN cd /usr/share/nginx/html/portal/ && \
-  mkdocs build --clean
+  mkdocs build --no-cache=false
 RUN rm -f /etc/nginx/conf.d/*
 ADD nginx/conf.d /etc/nginx/conf.d/
