@@ -8,7 +8,7 @@ pages:
     - '极路由': 'docs/gee.md'
     - '优酷路由宝': 'docs/youku.md'
 - 关于我们: about.md
-theme: flatly
+theme: readthedocs
 repo_url: https://coding.net/u/openwrtio/
 repo_name: Coding
 site_favicon: favicon.ico
