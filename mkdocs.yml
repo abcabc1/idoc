@@ -1,5 +1,10 @@
 site_name: i.io
 pages:
+- 首页: index.md
+- 文档:
+    - '企业 API': 'docs/beginners-guide.md'
+    - 'app API': 'docs/supported-devices.md'
+    - '开发者指南': 'docs/developer-guide.md'
 - 关于我们: about.md
 theme: readthedocs
 repo_url: https://github.com/abcabc1/idoc.git
